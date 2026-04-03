@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Pribadi</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="gallery-page">
+  <header>
+    <div class="container navbar">
+      <a class="nav-brand" href="INDEX.HTML">Portofolio</a>
+      <button class="toggle-menu" type="button" aria-label="Toggle navigation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16" />
+          <path d="M4 12h16" />
+          <path d="M4 18h16" />
+        </svg>
+      </button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="INDEX.HTML">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container reveal">
+    <h1>Galeri Pribadi</h1>
+    <p>Koleksi foto dan video pribadi dengan bingkai adaptif (potret/landscape auto-fit). Klik untuk zoom/fullscreen.</p>
+    <div class="gallery-grid">
+      <div class="photo" data-src="image/bckground.jpeg" data-caption="Latar belakang favorit">
+        <img src="image/bckground.jpeg" alt="bckground">
+        <div class="photo-overlay">
+          <div class="photo-overlay-content">
+            <div class="photo-icon">✦</div>
+            <h3 class="photo-title">Kielzzzz</h3>
+          </div>
+        </div>
+      </div>
+      <div class="photo" data-src="image/BermainPiano.mp4" data-caption="Bermain Piano">
+        <video src="image/BermainPiano.mp4" autoplay loop muted playsinline></video>
+        <div class="photo-overlay">
+          <div class="photo-overlay-content">
+            <div class="photo-icon">▶</div>
+            <h3 class="photo-title">Hobi</h3>
+          </div>
+        </div>
+      </div>
+      <div class="photo" data-src="image/kucing.jpeg" data-caption="Kucing lucu">
+        <img src="image/kucing.jpeg" alt="kucing">
+        <div class="photo-overlay">
+          <div class="photo-overlay-content">
+            <div class="photo-icon">✦</div>
+            <h3 class="photo-title">Kucing</h3>
+          </div>
+        </div>
+      </div>
+      <div class="photo" data-src="image/SuroCup.jpeg" data-caption="Suro Cup Robotika">
+        <img src="image/SuroCup.jpeg" alt="Suro Cup">
+        <div class="photo-overlay">
+          <div class="photo-overlay-content">
+            <div class="photo-icon">✦</div>
+            <h3 class="photo-title">Suro Cup Robotika</h3>
+          </div>
+        </div>
+      </div>
+      <div class="photo" data-src="image/SuroCupp.jpeg" data-caption="Desain Suro Cup">
+        <img src="image/SuroCupp.jpeg" alt="Suro Cupp">
+        <div class="photo-overlay">
+          <div class="photo-overlay-content">
+            <div class="photo-icon">✦</div>
+            <h3 class="photo-title">Desain Grafis</h3>
+          </div>
+        </div>
+      </div>
+      <div class="photo" data-src="image/FotoProfil.jpeg" data-caption="Foto Profil">
+        <img src="image/FotoProfil.jpeg" alt="Profil">
+        <div class="photo-overlay">
+          <div class="photo-overlay-content">
+            <div class="photo-icon">✦</div>
+            <h3 class="photo-title">Kielzzzz</h3>
+          </div>
+        </div>
+      </div>
+      <div class="photo" data-src="image/haha.jpeg" data-caption="Momen Haha">
+        <img src="image/haha.jpeg" alt="haha">
+        <div class="photo-overlay">
+          <div class="photo-overlay-content">
+            <div class="photo-icon">✦</div>
+            <h3 class="photo-title">Jakarta - Aloha</h3>
+          </div>
+        </div>
+      </div>
+      <div class="photo" data-src="image/hihi.jpeg" data-caption="Momen Hihi">
+        <img src="image/hihi.jpeg" alt="hihi">
+        <div class="photo-overlay">
+          <div class="photo-overlay-content">
+            <div class="photo-icon">✦</div>
+            <h3 class="photo-title">Jakarta - Aloha</h3>
+          </div>
+        </div>
+      </div>
+      <div class="photo" data-src="image/hehe.jpeg" data-caption="Momen Hehe">
+        <img src="image/hehe.jpeg" alt="hehe">
+        <div class="photo-overlay">
+          <div class="photo-overlay-content">
+            <div class="photo-icon">✦</div>
+            <h3 class="photo-title">Jakarta - ChinaTown</h3>
+          </div>
+        </div>
+      </div>
+      <div class="photo" data-src="image/huhu.jpeg" data-caption="Momen Huhu">
+        <img src="image/huhu.jpeg" alt="huhu">
+        <div class="photo-overlay">
+          <div class="photo-overlay-content">
+            <div class="photo-icon">✦</div>
+            <h3 class="photo-title">Sulawesi Utara - Tomohon</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+      <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+      <div class="lightbox-media" id="lightbox-media"></div>
+      <div class="caption" id="lightbox-caption"></div>
+    </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
