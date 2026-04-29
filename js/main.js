@@ -95,28 +95,28 @@ function renderBlogPosts() {
     {
       title: 'Prestasi Catur SMP: Belajar Berpikir Strategis',
       slug: 'catur',
-      date: '2024-10-01',
+      date: '2026-04-26',
       image: 'image/Catur.jpg',
       summary: 'Perjalanan prestasi saya dimulai sejak bangku SMP. Saat itu, saya mengikuti perlombaan catur dan berhasil masuk ke dalam 10 besar.'
     },
     {
       title: 'Lomba Desain Grafis SMP: Mengembangkan Kreativitas',
       slug: 'desain',
-      date: '2024-10-02',
+      date: '2026-04-26',
       image: 'image/SuroCupp.jpeg',
       summary: 'Selain catur, sewaktu SMP saya juga mengikuti lomba desain grafis.'
     },
     {
       title: 'Hobi Bermain Alat Musik: Ekspresi Diri melalui Nada',
       slug: 'musik',
-      date: '2024-10-03',
+      date: '2026-04-26',
       image: 'image/jazz.jpeg',
       summary: 'Selain prestasi akademik dan teknologi, saya memiliki hobi bermain alat musik yang menjadi cara favorit saya untuk melepas penat dan mengekspresikan diri.'
     },
     {
       title: 'Juara SURO CUP SMA: Kemenangan di Bidang Robotika',
       slug: 'robotika',
-      date: '2024-10-04',
+      date: '2026-04-26',
       image: 'image/SuroCup.jpeg',
       summary: 'Salah satu prestasi terbesar semasa SMA adalah mengikuti ajang robotika SURO CUP oleh UKM Robotika Universitas Sam Ratulangi.'
     }
@@ -164,7 +164,7 @@ function renderBlogPosts() {
     const readMoreLink = document.createElement('a');
     readMoreLink.href = post.slug + '.html';
     readMoreLink.className = 'read-more-link';
-    readMoreLink.textContent = 'Baca selengkapnya →';
+    readMoreLink.textContent = 'Baca selengkapnya';
 
     body.append(excerpt, readMoreLink);
 
