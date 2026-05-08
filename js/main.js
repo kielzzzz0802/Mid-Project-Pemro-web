@@ -283,8 +283,10 @@ function initParticles() {
 
 function initCursorParticles() {
   // Enable only for fine pointer devices and when cursor is available
+  // Jangan hard-block pada pointer type tertentu agar efek tetap terlihat di berbagai device
+  // (misal beberapa emulator/virtual browser mengirim pointer selain 'fine')
   const finePointer = window.matchMedia && window.matchMedia('(pointer: fine)').matches;
-  if (!finePointer) return;
+  if (window.matchMedia && !finePointer && window.matchMedia('(pointer: coarse)').matches) return;
 
   // Avoid duplicate canvases if script is executed multiple times
   if (document.getElementById('cursor-effects-canvas')) return;
