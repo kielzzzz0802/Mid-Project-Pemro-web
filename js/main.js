@@ -321,13 +321,9 @@ function initCursorParticles() {
   const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (prefersReducedMotion) return;
 
-  // Mode control (rotate through modes). Can be changed to a fixed mode.
+  // Mode: pilih satu agar efek pasti terlihat
   // 1 = glow halo, 2 = custom dot + soft particles, 3 = ripple grid lines
-  const MODES = [1, 2, 3];
-  let modeIndex = 0;
-  let mode = MODES[modeIndex];
-  let lastModeSwitch = performance.now();
-  const MODE_DURATION_MS = 5500;
+  const mode = 2;
 
   // Cursor state
   let mouseX = w / 2;
@@ -423,16 +419,7 @@ function initCursorParticles() {
 
     if (document.visibilityState === 'hidden') return;
 
-    const now = performance.now();
-    if (now - lastModeSwitch > MODE_DURATION_MS) {
-      modeIndex = (modeIndex + 1) % MODES.length;
-      mode = MODES[modeIndex];
-      lastModeSwitch = now;
 
-      // Clear previous visuals when switching modes
-      particles.length = 0;
-      ripples.length = 0;
-    }
 
     ctx.clearRect(0, 0, w, h);
 
