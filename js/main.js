@@ -289,6 +289,11 @@ function initCursorParticles() {
   // Avoid duplicate canvases if script is executed multiple times
   if (document.getElementById('cursor-effects-canvas')) return;
 
+  // Start cursor visuals by setting initial target
+  const initialX = window.innerWidth / 2;
+  const initialY = window.innerHeight / 2;
+
+
   // Canvas overlay
   const canvas = document.createElement('canvas');
   canvas.id = 'cursor-effects-canvas';
