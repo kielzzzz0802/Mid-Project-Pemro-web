@@ -33,6 +33,18 @@ html {
   pointer-events: none;
 }
 
+/* Cursor Particles */
+#cursor-particles {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 60;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+
 body {
   margin: 0;
   font-family: var(--font-sans);
